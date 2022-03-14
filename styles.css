@@ -1,0 +1,614 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:  'Roboto Serif', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/rom.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 1400px){
+
+    .main-img-container{
+        display:none;
+    }
+
+    .dropdown {
+        display:none;
+    }
+
+    
+
+    
+
+}
+
+@media only screen and (min-width: 920px){
+    .dropdown{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 920px){
+
+    .footer-socials img{
+        display:none;
+    }
+
+    .footerbox{
+        display:none;
+    }
+
+    .aside-container{
+        display:none;
+    }
+
+
+   nav{
+      display:none;
+
+   }
+
+
+
+.dropdown {
+    display:inline-block;
+    width:130px;
+    padding:30px;
+    margin:10px;
+   
+    
+    
+  
+   
+    
+    
+  }
+
+  .dropdown div{
+      background-color: rgb(248, 248, 248);
+      width:25px;
+      height:5px;
+      margin:5px;
+      border-radius: 50px;
+
+  }
+  
+  .dropdown-content {
+    display:none;
+    position: absolute;
+   
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+   
+    
+  }
+
+  .dropdown a{
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 20px;
+      padding:40px;
+      color:white;
+      text-transform: uppercase;
+      background-color: rgb(83, 85, 88);
+      
+      
+      
+     
+
+  }
+
+  .dropdown a:hover{
+    background-color: rgb(114, 116, 119);
+    
+     
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display:grid;
+    
+    
+    
+  }
+}
+
+
+
+
+
+/*burgare
+
+.burger{
+    padding:30px;
+    float:right;
+    display:none;
+}
+.burger div{
+    background-color: white;
+    width:25px;
+    height:  3px;
+    margin:5px;
+  
+}
+ burgare slut*/
+
+.gridbox{  
+
+ display:grid;
+ grid-template-columns: 75vw 19vh;
+ grid-template-rows: 100px 800px 100px; 
+ grid-auto-rows:auto;
+}
+
+/*header*/
+.headerbox{
+    grid-column: 1 / span 2;
+    width:100%; 
+    display: grid;
+    
+}
+
+
+
+nav{
+    
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.0);
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    display:flex;
+   
+}
+
+nav ul li a{
+    line-height:12vh;
+    color: white;
+    padding: 12px 40px;
+    text-decoration: none;
+    font-size:3vh;
+    font-weight:bold;
+    text-transform: uppercase;
+   
+}
+
+nav ul li a:hover{
+    background: rgba(255,255,255,0.329);
+    border-radius: 10px;
+}
+
+
+
+
+/*main*/
+
+h1{
+    color:white;
+    font-size: 5vw;
+    
+}
+.main-text{
+  
+    float:left;
+    padding-left: 150px;
+    padding-top: 20vh;
+    
+}
+
+.ommig-text{
+    float:left;
+    padding-top:50px;
+}
+.home-p{
+    color: white;
+    font-size: 3vh;
+    font-style: italic;
+    line-height: 50px;
+}
+
+button{
+    width: 20vh;
+    padding: 12px 0;
+    background: rgba(255, 255, 255, 0.664);
+    border:0;
+    border-radius: 20px;
+    box-shadow:0 0 5px rgb(41, 40, 40);
+    
+}
+button a{
+    text-decoration: none;
+    color: rgb(66, 69, 73); 
+    font-size: 20px;
+    font-weight:bolder;
+}
+button a:hover{
+    color: white;
+    
+}
+
+.main-img-container{
+
+float:right;
+padding-right: 10vw;
+padding-top: 15vh;
+
+
+}
+
+.main-img{
+    border-radius: 50%;
+    box-shadow:0 0 4px;
+    transition: transform 0.5s;
+  
+ 
+    
+}
+
+
+/* bilden rör sig*/
+.main-img:hover{
+    transform: translateY(-10px)
+}
+
+
+
+/* galleri*/
+
+
+
+
+
+
+
+
+
+/* aside */
+.asidebox{
+    width:19vw;
+   
+}
+
+.socials-container{
+    list-style: none;
+    text-align: center;
+    padding-top: 20vh;
+    display: block;
+  line-height: 10vh;
+ 
+
+
+}
+
+.socials{
+    border-radius: 50%;
+}
+
+/* footer */
+.footerbox{
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    display: grid;
+    background-color: rgb(196, 196, 196,0.150);
+}
+
+#footer-text{
+    color:white;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+}
+
+.footer-socials{
+    text-align: center;
+    padding: 0px;
+    
+}
+
+.footer-socials img{
+    margin: 15px;
+    margin-right: 60px;
+    border-radius: 30px;
+    transition: transform 0.5s;
+   
+}
+
+.footer-socials img:hover{
+    transform: translateY(-10px)
+}
+
+/*galleri*/
+
+.col{
+    width:auto;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    display:inline-block;
+    border-radius:10px;
+  
+    padding: 15px 25px;
+    
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    transition: transform 0.5s;
+    box-shadow: 0 0 2px;
+  
+    background-position: center;
+    background-size: contain;
+}
+
+.card h5{
+    color:white;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+}
+
+.card1{
+      background-image: url(images/1.jpg);
+}
+
+.card2{
+    background-image: url(images/2.jpg);
+}
+
+.card3{
+    background-image: url(images/3.jpg);
+}
+
+.card4{
+    background-image: url(images/5.jpg);
+}
+
+.card5{
+    background-image: url(images/8.jpg);
+}
+
+.card6{
+    background-image: url(images/9.jpg);
+}
+
+.aside-container{
+  
+    
+    background: rgba(3, 3, 3, 0.200);
+    color:white;
+    border-radius: 9px;
+    margin-top:50px;
+   
+    
+
+   
+    
+}
+
+.aside-container h2{
+    padding: 10px;
+    font-weight: 700;
+    
+    font-size: 20px;
+   line-height: 25px;
+    
+}
+
+
+.aside-container p{
+    padding: 10px;
+    font-size: 15px;
+   line-height: 25px;
+    
+}
+
+.aside-container ul li{
+    padding-left:20px;
+}
+
+
+/* Form */
+
+form{
+    box-sizing: border-box;
+    text-decoration: none;
+    color:white;
+    background: rgba(27,31,34,0.50);
+    width:640px;
+    margin:50px auto;
+    max-width:97%;
+    border-radius: 30px;
+    padding: 55px 30px;
+
+}
+form .item{
+    padding-bottom:20px;
+}
+
+form .title h3{
+    letter-spacing:6px;
+    
+    border-bottom: 1px solid white;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    margin-bottom:24px;
+    width:48%;
+    min-width: 400px;
+    
+    
+}
+
+form label{
+    display:block;
+    font-size: 13px;
+    letter-spacing:3.5px;
+    margin-bottom:20px;
+}
+
+form .item input{
+    border-radius:4px;
+    border: 1px solid white;
+    outline:0;
+    padding: 16px;
+    width:100%;
+    height:44px;
+    background: transparent;
+    color: white;
+    
+}
+
+form .full{
+    margin-bottom:24px;
+}
+
+form .full textarea{
+    background: transparent;
+border-radius:4px;
+border: 1px solid white;
+outline: 0;
+padding: 12px 16px;
+width: 100%;
+height:200px;
+font-size: 17px;
+color:white;
+}
+
+form .action{
+    margin-bottom: 32px;
+}
+
+form .action input{
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size:13px;
+    font-weight: 600;
+    height:44px;
+    letter-spacing:3px;
+    outline:0;
+    padding: 0 20px 0 22px;
+    margin-right:10px;
+    color:white;
+}
+
+form .action input[type=submit]{
+    background:white;
+    color:black;
+    
+}
+
+@media (max-width: 480px){
+    form .half{
+        flex-direction:column;
+    }
+
+    form .half .item{
+        width:100%
+    }
+
+    form .action{
+        display:flex;
+        flex-direction:column;
+    }
+
+    form .action input{
+        margin-bottom:10px;
+        width:100%;
+    }
+
+
+}
+
+/* aside kontakt*/
+
+
+
+.aside-socials a{
+    color:white;
+    text-decoration: none;
+    line-height: 40px;
+    list-style: none;
+    display:block;
+    padding-left: 10px;
+    padding-top:10px;
+}
+
+.aside-socials a:hover{
+    background-color:rgba(198, 177, 204, 0.664) ;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.flow li{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight : bold;
+    list-style-type: none;
+}
+
+.main-text h2{
+    color:white;
+    font-size: 50px;
+    
+}
+
+.ommig-p{
+    color:white;
+    padding-top:30px;
+    padding-bottom:30px;
+    line-height: 27px;
+    width:30vw;
+}
+
+.mainbox h3{
+    color:white;
+    font-weight: 600;
+    padding-bottom: 10px;
+    
+}
+
+.mainbox dl{
+    background-color:rgba(7, 7, 7, 0.2) ;
+    border-radius: 9px;
+    padding:20px;
+    box-shadow: 0 0 3px;
+}
+
+.mainbox dl dt{
+    font-weight: 700;
+    color:white;
+    margin:7px;
+    
+}
+
+.mainbox dl dd{
+    font-style: italic;
+    color:rgb(196, 196, 196);
+}
+
